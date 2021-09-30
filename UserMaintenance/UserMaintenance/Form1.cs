@@ -22,6 +22,7 @@ namespace UserMaintenance
             label1.Text = Resource.FullName; // label1
             button2.Text = Resource.Fájlba_írás;
             button1.Text = Resource.Add; // button1
+            button3.Text = Resource.Delete;
 
             // listbox1
 
@@ -61,6 +62,12 @@ namespace UserMaintenance
                     sw.WriteLine(); // Ez a sor az alábbi módon is írható: sr.Write("\n");
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            listBox1.Items.Remove(listBox1.SelectedItem);
         }
     }
  }
