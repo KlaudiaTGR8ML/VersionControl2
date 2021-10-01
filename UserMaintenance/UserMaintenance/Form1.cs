@@ -67,7 +67,9 @@ namespace UserMaintenance
         private void button3_Click(object sender, EventArgs e)
         {
 
-            listBox1.Items.Remove(listBox1.SelectedItem);
+            var törlés = listBox1.SelectedItem;
+            if (törlés != null)
+                users.Remove((User)törlés);
         }
     }
  }
